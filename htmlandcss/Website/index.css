@@ -1,0 +1,369 @@
+* {
+  margin: 0px;
+
+  padding: 0px;
+
+  box-sizing: border-box;
+}
+.nav-container {
+  position: fixed;
+  z-index: 1;
+}
+nav {
+  display: flex;
+
+  justify-content: space-around;
+
+  align-items: center;
+
+  min-height: 70px;
+  width: 100%;
+  background-color: #151416;
+
+  font-family: "Montserrat", sans-serif;
+  position: fixed;
+}
+.logo {
+  margin-left: 30px;
+  width: 70px;
+  height: 30px;
+}
+.icon-dv {
+  display: none;
+}
+.icon {
+  font-size: 30px;
+  color: #fff;
+}
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+  position: static;
+}
+.nav-links li {
+  list-style-type: none;
+  a:hover {
+    background-size: 100% 2px; /*width:100% height:2px*/
+  }
+}
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 500;
+  display: inline-block;
+  padding-bottom: 5px;
+  background: linear-gradient(#fff, #fff) center bottom; /*OR bottom right OR bottom left*/
+  background-size: 0% 2px; /*width:0% height:2px*/
+  background-repeat: no-repeat; /* Don't repeat !! */
+  transition: all 0.45s;
+}
+.contactbtn {
+  border-radius: 23px;
+  color: #fff;
+  font-weight: 500;
+  background-color: #0069d9;
+  border-color: #0069d9;
+  border: 1px solid transparent;
+  fill: none;
+  height: 40px;
+  width: 130px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 10px;
+}
+#mob-navbar-item {
+  display: none;
+}
+.mob-navbar-item {
+  background-color: #151416;
+  padding: 5px 25px 10px 45px;
+}
+.mob-menulist li {
+  color: #fff;
+  position: relative;
+  padding-bottom: 5px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+  list-style-type: none;
+  margin-top: 15px;
+}
+/* .main-container {
+  display: block;
+} */
+.fasttract-content {
+  position: relative;
+}
+.fasttract-img {
+  /* margin-right: 30px; */
+  position: absolute;
+  top: 0;
+  bottom: -60px;
+  right: -30px;
+  width: 50%;
+  animation: move2 4s ease-in;
+  animation-fill-mode: forwards;
+}
+.fasttract-textcont {
+  background-color: #151416;
+  min-height: 600px;
+  width: 100%;
+  align-items: center;
+  display: flex;
+}
+@keyframes move {
+  0% {
+    margin-left: 5%;
+  }
+  100% {
+    margin-left: 10%;
+  }
+}
+@keyframes move2 {
+  0% {
+    margin-right: 1%;
+  }
+  50%,
+  100% {
+    margin-right: 5%;
+  }
+}
+
+.fasttract-text {
+  margin-left: 0%;
+  background: transparent;
+  width: 70%;
+  display: inline-block;
+  line-height: 1.1;
+  position: absolute;
+}
+
+.fasttract-heading {
+  font-weight: 700;
+  color: #fff;
+  font-size: 70px;
+  font-style: bold;
+  animation: move 4s ease-in-out;
+  animation-fill-mode: forwards;
+}
+.fasttract-description {
+  width: 36%;
+  color: #fff;
+  font: size;
+  line-height: 1.1;
+  animation: move 4s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.raw-info {
+  width: 100%;
+  margin-top: 120px;
+
+  p {
+    width: 60%;
+    font-size: 20px;
+    text-align: center;
+    vertical-align: middle;
+    margin-left: 20%;
+    animation: none;
+  }
+}
+.slideshow-container {
+  width: 100%;
+  text-align: center;
+  height: 60px;
+}
+
+.mySlides {
+  justify-content: space-between;
+  display: none;
+  img {
+    margin-left: 40px;
+    width: 60px;
+  }
+}
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.card-container {
+  background-color: #aab8b8;
+  position: relative;
+}
+.title-container {
+  display: flex;
+  align-items: center;
+  height: 160px;
+}
+.line {
+  flex: 0.1;
+  height: 1px;
+  background-color: #fc3838;
+  height: 2px;
+  width: 5%;
+}
+.title {
+  color: #fc3838;
+  font-family: Roboto Condensed, sans-serif;
+  font-weight: 700;
+  color: #fc3838;
+  font-size: 22px;
+  margin-left: 10px;
+  text-transform: uppercase;
+}
+.card-img {
+  width: 30%;
+  margin-top: -30px;
+  position: absolute;
+  padding-left: 30px;
+}
+.experience-card {
+  display: inline-flex;
+  width: 100%;
+  /* background-color: rgb(6, 5, 5); */
+  position: relative;
+  height: 390px;
+}
+.experience-text-area {
+  width: 30%;
+  margin-left: 680px;
+  margin-top: 10%;
+}
+.experience-text {
+  background-color: #dae4e4;
+  width: 90%;
+  margin-right: 0px;
+  margin-left: 80px;
+}
+.footer {
+  background-color: #151416;
+  height: 200px;
+  /* align-items: center; */
+  display: flex;
+  flex-direction: column;
+}
+.main-text-footer {
+  width: 100%;
+  color: #fff;
+  justify-content: center;
+  display: inline-grid;
+  align-items: center;
+}
+.in-touchbtn {
+  margin-top: 30px;
+  width: fit-content;
+  background-color: #0069d9;
+  margin-left: 40%;
+  border-radius: 23px;
+  color: #fff;
+  font-weight: 500;
+  border-color: #0069d9;
+  border: 1px solid transparent;
+  fill: none;
+  height: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+/* .sub-menu {
+} */
+
+.sub-menu {
+  display: none;
+  background-color: #151416;
+  color: #fff;
+  position: absolute;
+}
+.sub-menu li:hover .sub-menu li {
+  background: none !important;
+}
+
+.sub-menu li {
+  display: block;
+}
+.item-desktop li:hover .sub-menu {
+  display: block;
+}
+/*hide submenu content*/
+
+/* .nav-links li a:hover .sub-menu {
+  position: absolute;
+  display: block;
+} */
+
+@media screen and (max-width: 768px) {
+  .icon-dv {
+    display: block;
+  }
+  .item-desktop {
+    display: none;
+  }
+  .fasttract-content {
+    list-style: none;
+    display: contents;
+    .fasttract-img {
+      width: 100%;
+      /* min-height: 20%; */
+      animation: none;
+      min-height: 530px;
+      padding-bottom: 30px;
+    }
+    .fasttract-text {
+      margin-top: 30px;
+      width: 100%;
+      position: relative;
+      .fasttract-heading {
+        font-size: 50px;
+        animation: none;
+      }
+      .fasttract-description {
+        animation: none;
+        width: 100%;
+      }
+    }
+
+    /* .moreoption {
+    display: block;
+  } */
+  }
+  .card-img {
+    width: 100%;
+    position: relative;
+  }
+  .fasttract-content {
+    display: contents;
+    margin: 0px;
+    position: relative;
+  }
+  .experience-text {
+    width: 100%;
+    margin: 0px;
+    margin: 0px;
+  }
+  .experience-text-area {
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 0px;
+  }
+  .card-container {
+    display: contents;
+  }
+  .experience-card {
+    display: contents;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #mob-navbar-item {
+    display: none !important;
+  }
+}

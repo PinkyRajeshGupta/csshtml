@@ -1,0 +1,41 @@
+.parent-box {
+  height: 500px;
+  width: 500px;
+  border: 2px solid blue;
+}
+
+.child-box {
+  height: 50px;
+  width: 50px;
+  background-color: red;
+  animation: move 4s ease-in;
+  animation-iteration-count: infinite;
+}
+
+@keyframes move {
+  0%,
+  48%,
+  100% {
+    transform: translateX(0);
+    background-color: red;
+  }
+  12%,
+  84% {
+    transform: translateY(450px);
+    background-color: aqua;
+  }
+  24%,
+  72% {
+    transform: translate(450px, 450px);
+    background-color: blue;
+  }
+  36%,
+  60% {
+    transform: translate(450px);
+    background-color: blueviolet;
+  }
+}
+/* @keyframes reversemove {
+    
+
+} */
